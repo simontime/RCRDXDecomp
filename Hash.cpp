@@ -7,7 +7,7 @@ namespace Hash
 		return hashTable[u16 >> 8] ^ hashTable[u16 & 0xFF];
 	}
 
-	uint32_t Hash::FromBuffer(const unsigned char *buffer, int len)
+	uint32_t FromBuffer(const unsigned char *buffer, int len)
 	{
 		uint32_t hash = 0;
 
@@ -20,7 +20,7 @@ namespace Hash
 		return hash;
 	}
 
-	uint32_t Hash::FromBufferBool(const unsigned char *buffer, int len)
+	uint32_t FromBufferBool(const unsigned char *buffer, int len)
 	{
 		uint32_t hash = 0;
 
