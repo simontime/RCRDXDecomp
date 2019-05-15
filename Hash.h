@@ -109,8 +109,8 @@ const uint8_t xorTable[1024] =
 namespace Hash
 {
 	uint32_t EncodeU16(uint16_t u16);
-	uint32_t FromBuffer(const unsigned char *buffer, int len);
-	uint32_t FromBufferBool(const unsigned char *buffer, int len);
+	uint32_t FromBuffer(const uint8_t *buffer, int len);
+	uint32_t FromBufferBool(const uint8_t *buffer, int len);
 	uint32_t FromStr(const char *str);
 	uint32_t FromStr(const char *str, int len);
 	uint32_t Lookup(uint8_t val);
